@@ -10,7 +10,41 @@ header .container, main .container,footer .container{
 }
 header{
 	background: white;
+	overflow: auto;
+}
+header h1{
+	float: left;
+	width: 570px;
+}
+header nav{
+	float: right;
+	width: 285px;
 }
 main{
 	background: white;
+	overflow: auto;
+}
+main .leftcolumn{
+	float:left;
+	width: 50%;
+}
+main .rightcolumn{
+	float:right;
+	width: 50%;
+}
+footer .leftcolumn{
+	float:left;
+	width: 50%;
+}
+footer .rightcolumn{
+	float:right;
+	width: 50%;
+}
+footer .contact{
+	float: left;
+	width: 570px;	
+}
+footer .sitemap{
+	float: right;
+	width: 285px;
 }
