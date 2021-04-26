@@ -12,23 +12,30 @@ header .container, main .container,footer .container{
 header{
 	background: white;
 	overflow: auto;
+	padding: 20px;
 }
 header h1{
 	float: left;
 	width: 570px;
-	font-size: large;
+	font-size: xx-large;
 }
 header nav{
 	float: right;
 	width: 285px;
+	font-size: large;
 }
 main{
 	background: white;
 	overflow: auto;
+	padding-bottom: 10px;
+	font-size: 1.2em;
 }
 main .leftcolumn{
 	float:left;
 	width: 50%;
+}
+main li{
+	font-size: 1.05em;
 }
 main .rightcolumn{
 	float:right;
@@ -44,15 +51,19 @@ footer .rightcolumn{
 }
 footer .contact{
 	float: left;
-	width: 570px;	
+	width: 570px;
+	font-size: 1.1em;	
 }
 footer .sitemap{
 	float: right;
 	width: 285px;
+	font-size: 1.1em;
 }
 h1,h2,h3,h4{
 	font-family: Ubuntu;
+	padding: 5px;
 }
 p,li,a,h5{
 	font-family: 'Droid Sans';
+	padding: 5px;
 }
