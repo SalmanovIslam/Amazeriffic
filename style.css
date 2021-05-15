@@ -67,3 +67,19 @@ p,li,a,h5{
 	font-family: 'Droid Sans';
 	padding: 5px;
 }
+footer a, header a{
+	color: red;
+	text-decoration: none;
+}
+.tabs a span{
+	display: inline-block;
+	border-radius: 5px 5px 0 0;
+	width:100px;
+	margin-right: 10px;
+	text-align: center;
+	background: #ddd;
+	padding: 5px;
+}
+.tabs a span.active{
+	background: #eee;
+}
