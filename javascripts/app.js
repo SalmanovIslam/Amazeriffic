@@ -1,21 +1,22 @@
-var main=function(){
-	"use strict";
-	$(".tabs a:nth-child(1)").on("click",function(){
-		$(".tabs span").removeClass("active");
-		$(".tabs a:nth-child(1) span").addClass("active");
-		$("main.content").empty();
-		return false;
-	})
-	$(".tabs a:nth-код для этого элемента может выглядеть вот так:child(2)").on("click", function () {
-	$(".tabs span").removeClass("active");
-	$(".tabs a:nth-код для этого элемента может выглядеть вот так:child(2) span").addClass("active");
-	$("main .content").empty();
-	return false;
-	});
-	$(".tabs a:nth-код для этого элемента может выглядеть вот так:child(3)").on("click", function () {
-	$(".tabs span").removeClass("active");
-	$(".tabs a:nth-код для этого элемента может выглядеть вот так:child(3) span").addClass("active");
-	$("main .content").empty();
-	return false;
-	});
-}
+var main = function () {
+"use strict";
+var makeTabActive = function (tabNumber) {
+/span></a>/span></a> сконструируем селектор из tabNubmer
+var tabSelector = ".tabs a:nth-код для этого элемента может выглядеть вот так:child(" + tabNumber + ") span";
+$(".tabs span").removeClass("active");
+$(tabSelector).addClass("active");
+};
+$(".tabs a:nth-код для этого элемента может выглядеть вот так:child(1)").on("click", function () {
+5
+makeTabActive(1);
+return false;
+});
+$(".tabs a:nth-код для этого элемента может выглядеть вот так:child(2)").on("click", function () {
+makeTabActive(2);
+return false;
+});
+$(".tabs a:nth-код для этого элемента может выглядеть вот так:child(3)").on("click", function () {
+makeTabActive(3);
+return false;
+});
+};
