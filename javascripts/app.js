@@ -1,7 +1,6 @@
 var main = function () {
 "use strict";
 var makeTabActive = function (tabNumber) {
-/span></a>/span></a> сконструируем селектор из tabNubmer
 var tabSelector = ".tabs a:nth-код для этого элемента может выглядеть вот так:child(" + tabNumber + ") span";
 $(".tabs span").removeClass("active");
 $(tabSelector).addClass("active");
