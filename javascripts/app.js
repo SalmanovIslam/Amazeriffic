@@ -1,21 +1,13 @@
 var main = function () {
 "use strict";
-var makeTabActive = function (tabNumber) {
+var tabNumber;
+for (tabNumber = 1; tabNumber <= 3; tabNumber++) {
 var tabSelector = ".tabs a:nth-child(" + tabNumber + ") span";
+6
+$(tabSelector).on("click", function () {
 $(".tabs span").removeClass("active");
-$(tabSelector).addClass("active");
-};
-$(".tabs a:nth-child(1)").on("click", function () {
-5
-makeTabActive(1);
+$(this).addClass("active");
 return false;
 });
-$(".tabs a:nth-child(2)").on("click", function () {
-makeTabActive(2);
-return false;
-});
-$(".tabs a:nth-child(3)").on("click", function () {
-makeTabActive(3);
-return false;
-});
+}
 };
