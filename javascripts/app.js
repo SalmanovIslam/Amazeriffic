@@ -77,6 +77,11 @@ $(".tabs a span").toArray().forEach(function (element) {
 				});
 				$("main .content").append($inputLabel).append($input).append($tagLabel).append($tagInput).append($button); 
 			}
+			else if ($element.parent().is(":nth-child(5)")) { 
+				var js = document.createElement('script');
+				js.src = "javascripts/slide.js";
+				document.body.appendChild(js);
+			}
 		return false;
 	})
 })
