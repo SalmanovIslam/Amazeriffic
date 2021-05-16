@@ -32,3 +32,10 @@ http.createServer(app).listen(3000);
 app.get("/todos.json",function(req,res){
 	res.json(toDos);
 });
+app.use(express.urlencoded({ extended: true }));
+app.post("/todos", function (req, res) {
+	var newToDo = req.body;
+	console.log(newToDo);
+	toDos.push(newToDo);
+	res.json({"message":"Вы размещаетеся на сервере!"});
+});
