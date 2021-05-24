@@ -1,6 +1,14 @@
 var express = require("express"),
 	http = require("http"),
 	mongoose = require("mongoose"),
+	var UserSchema = mongoose.Schema({
+		user:String,
+		id:String,
+	});
+	var User = mongoose.model("User",UserSchema);
+	module.export = User;
+
+
 	app = express();
 app.use(express.static("C:/Users/Islam/Desktop/Веб прг/Практика/Amazeriffic/client"));
 var ToDoSchema = mongoose.Schema({
